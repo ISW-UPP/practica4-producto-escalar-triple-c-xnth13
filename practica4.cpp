@@ -30,9 +30,9 @@ int main()
 		cout << "ingrese los valores del vector 3:"<< endl;
 		cin >> vectorC[iv];
 	}
-	// PRODUCTO CRUZ B x C ((y2 * z3) - (z2 * y3) - ((x2 * z3) - (y2*x3)) + ((x2*y3) - (y2*x3))
+	// PRODUCTO CRUZ 
 	vectorI = ((vectorB[1] * vectorC[2]) - (vectorB[2]* vectorC[1]));
-	vectorJ = ((vectorB[0] * vectorC[2]) - (vectorB[2] * vectorC[0]));
+	vectorJ = -((vectorB[0] * vectorC[2]) - (vectorB[2] * vectorC[0]));
 	vectorK = ((vectorB[0] * vectorC[1]) - (vectorB[1] * vectorC[0]));
 	// producto_Cruz_BxC = vectorI - vectorJ + vectorK
 	im = vectorA[0] * vectorI;
