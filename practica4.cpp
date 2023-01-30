@@ -32,7 +32,7 @@ int main()
 	}
 	// PRODUCTO CRUZ 
 	vectorI = ((vectorB[1] * vectorC[2]) - (vectorB[2]* vectorC[1]));
-	vectorJ = -((vectorB[0] * vectorC[2]) - (vectorB[2] * vectorC[0]));
+	vectorJ = ((vectorB[0] * vectorC[2]) - (vectorB[2] * vectorC[0]));
 	vectorK = ((vectorB[0] * vectorC[1]) - (vectorB[1] * vectorC[0]));
 	// producto_Cruz_BxC = vectorI - vectorJ + vectorK
 	im = vectorA[0] * vectorI;
